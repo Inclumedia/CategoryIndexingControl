@@ -12,5 +12,5 @@ $messages = array();
  * @author Nathan Larson
  */
 $messages['en'] = array(
-	'categoryindexingcontrol-desc' => 'Applies a noindex robot policy to pages in certain categories'
+	'categoryindexingcontrol-desc' => 'Applies a noindex robot policy to pages in specified categories'
 );

@@ -1,6 +1,6 @@
 <?php
 /**
- * CategoryIndexingControl
+ * CategoryIndexingControl extension to MediaWiki
  *
  * @file
  * @ingroup Extensions
@@ -8,9 +8,13 @@
  * @version 1.0.0
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  * @link http://www.mediawiki.org/wiki/Extension:CategoryIndexingControl Documentation
+ * @link http://www.mediawiki.org/wiki/Extension_talk:CategoryIndexingControl Support
+ * @link https://github.com/Inclumedia/CategoryIndexingControl Source code
  */
+
+// Prevent direct calls
 if ( !defined( 'MEDIAWIKI' ) ) {
-	die();
+        die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
 // Extension credits that will show up on Special:version
@@ -23,8 +27,13 @@ $wgExtensionCredits['parserhook'][] = array(
 	'descriptionmsg' => 'categoryindexingcontrol-desc',
 );
 
+// Wherabouts of files
 $wgExtensionMessagesFiles['CategoryIndexingControl'] = __DIR__ . '/CategoryIndexingControl.i18n.php';
+
+// Register hooks
 $wgHooks['OutputPageBeforeHTML'][] = 'noIndexCategories';
+
+// Extension's function
 $wgNoIndexCategories = array();
 $wgNoIndexCategoriesRan = false;
 function noIndexCategories ( &$out, &$text ) {

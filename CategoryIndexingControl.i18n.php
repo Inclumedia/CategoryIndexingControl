@@ -14,3 +14,10 @@ $messages = array();
 $messages['en'] = array(
 	'categoryindexingcontrol-desc' => 'Applies a noindex robot policy to pages in specified categories'
 );
+
+/** German (Deutsch)
+* @author Kghbln
+*/
+$messages['de'] = array(
+	'categoryindexingcontrol-desc' => 'Ermöglicht das Setzen der Anweisung <code>nonindex</code> für bestimmte Kategorien zur Verhinderung von dessen Indexierung im Internet'
+);

@@ -16,8 +16,8 @@ $messages['en'] = array(
 );
 
 /** German (Deutsch)
-* @author Kghbln
-*/
+ * @author Kghbln
+ */
 $messages['de'] = array(
 	'categoryindexingcontrol-desc' => 'Ermöglicht das Setzen der Anweisung <code>nonindex</code> für bestimmte Kategorien zur Verhinderung von dessen Indexierung im Internet'
 );
